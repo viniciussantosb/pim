@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-3 position-relative">
+        <h1>Perfil do Usuário</h1>
+        <a href="javascript:void(0)" class="cart-icon" onclick="toggleCartModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .49.383L2.89 4H14.5a.5.5 0 0 1 .49.605l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.605L4.89 5H2.31l-.805 3.21a.5.5 0 0 1-.98-.196L2.01 4.13 1.61 2.61a.5.5 0 0 1-.11-.29V2a.5.5 0 0 1-.5-.5zM5 12.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+            </svg>
+        </a>
+    </header>
+    <nav id="myNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="buscar.html">Buscar</a>
+        <a href="publicar.html">Publicar</a>
+        <a href="ecommerce.html">E-commerce</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+    <button id="navToggleBtn" onclick="toggleNav()">☰</button>
+    <main id="mainContent">
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <p>Informações do usuário.</p>
+        </section>
+    </main>
+    <footer id="footerContent" class="bg-dark text-white text-center py-2">
+        <p>&copy; 2024 WorlDog. Todos os direitos reservados.</p>
+        <p>
+            <a href="https://www.exemplo.com" class="text-white">Link externo</a> |
+            <a href="#home" class="text-white">Link interno</a> |
+            <a href="#images" class="text-white">Galeria</a>
+        </p>
+    </footer>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Seu carrinho está vazio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
